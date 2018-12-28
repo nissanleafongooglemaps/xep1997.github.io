@@ -1,0 +1,1221 @@
+html, body {
+float: left;
+width: 100%;
+margin: 0;
+padding: 0;
+height: 100%;
+background-repeat: no-repeat;
+}
+html {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+* {
+float: left;
+padding: 0;
+margin: 0;
+transition: all 0.2s ease;
+}
+*:not(input) {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+cursor: default;
+}
+button:focus, input:focus{
+outline: 0;
+}
+
+
+
+@media (min-width : 701px) {
+
+/*  Top with actionType */
+
+#top_nav {
+float: left;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 60px;
+z-index: 140;
+}
+#top_nav_left {
+float: left;
+width: calc(100% - 10px);
+height: 60px;
+line-height: 60px;
+}
+#top_nav_left h3 {
+font-size: 24px;
+padding-left: 10px;
+}
+#dropdown_countries {
+border: none;
+padding: 0;
+margin: 0;
+}
+#dropdown_countries img {
+float: left;
+margin: 6px;
+}
+#top_nav_right {
+float: left;
+width: 10px;
+height: 60px;
+line-height: 60px;
+text-align: right;
+}
+#top_nav_switch {
+float: left;
+width: 460px;
+height: 60px;
+line-height: 60px;
+}
+#top_nav_right input {
+display: none;
+}
+#top_nav_right label {
+width: 140px;
+margin-left: 10px;
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+text-align: center;
+font-size: 24px;
+}
+#inputactiontype {
+float: left;
+width: calc(100% - 110px);
+margin-left: 10px;
+margin-right: 10px;
+padding-left: 10px;
+padding-right: 10px;
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+font-size: 24px;
+border: none;
+}
+
+
+
+/*  Bottom Player */
+
+#bottom_player {
+float: left;
+width: 100%;
+height: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+position: fixed;
+z-index: 50;
+}
+
+#controls {
+float: left;
+width: 200px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+#controls button {
+float: left;
+margin-left: 0px;
+font-size: 16px;
+}
+#levdown img, #levup img {
+float: left;
+width: 16px;
+height: 16px;
+padding: 8px;
+}
+#levdown:hover img, #levup:hover img {
+float: left;
+width: 32px;
+height: 32px;
+padding: 0px;
+}
+#levdown, #levup {
+width: 60px;
+float: left;
+padding-left: 14px;
+height: 60px;
+line-height: 60px;
+}
+#levdown:hover, #levup:hover {
+width: 60px;
+float: left;
+padding-left: 14px;
+}
+#playbutton img {
+float: left;
+width: 24px;
+height: 24px;
+padding: 4px;
+}
+#playbutton:hover img {
+width: 32px;
+height: 32px;
+padding: 0px;
+}
+#playbutton {
+width: 80px;
+float: left;
+padding-left: 24px;
+height: 80px;
+line-height: 80px;
+margin-top: -10px;
+}
+#display {
+float: left;
+font-size: 24px;
+height: 60px;
+line-height: 60px;
+width: calc(50% - 120px);
+padding-left: 20px;
+}
+#clock {
+float: left;
+font-size: 24px;
+height: 60px;
+line-height: 60px;
+width: calc(50% - 120px);
+text-align: right;
+padding-right: 20px;
+}
+
+/*  Nav Left */
+
+#channel_nav {
+float: left;
+width: 300px;
+left: 0px;
+padding-bottom: 70px;
+padding-top: 80px;
+top: 0px;
+bottom: 0px;
+position: fixed;
+}
+#channel_nav label {
+text-align: left;
+float: left;
+overflow: hidden;
+}
+#channel_nav input{
+display: none;
+}
+.nav {
+width: 250px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 10px;
+padding-left: 20px;
+font-size: 20px;
+height: 40px;
+line-height: 40px;
+}
+.cntry {
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 40px;
+padding-right: 10px;
+width: 230px;
+font-size: 16px;
+height: 32px;
+line-height: 32px;
+}
+	
+/*  Station List */
+
+#main_settings, #main_stations, #main_recent {
+width: calc(100% - 300px);
+margin-left: 300px;
+float: left;
+}
+#channels {
+float: left;
+width: 100%;
+margin-top: 60px;
+margin-bottom: 80px;
+}
+#channels button {
+float: left;
+padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: calc(100% - 20px);
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 5px;
+}
+#channels button:hover {
+padding-top: 15px;
+padding-bottom: 15px;
+margin-top: -5px;
+margin-bottom: 0px;
+}
+#channels h6 {
+margin: 0;
+padding: 0;
+font-size: 16px;
+}
+#channels button span {
+display: none;
+}
+#channels button:hover span {
+display: block;
+}
+#channels_favorites {
+display: block;
+}
+.cha {
+width: 100%;
+display: block;
+
+}
+.cha button {
+width: 100%;
+}
+.ch_norway {
+}
+
+/*  Favorites */
+
+#main_favorites {
+float: left;
+margin-top: 80px;
+display: none;
+margin-bottom: 80px;
+width: 100%;
+}
+#main_favorites div {
+float: left;
+width: 100%;
+}
+#favchannels {
+float: left;
+width: 100%;
+}
+#main_favorites button {
+float: left;
+padding-left: 20px;
+width: calc(100% - 40px);
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 5px;
+height: 48px;
+line-height: 48px;
+}
+#main_favorites button:hover {
+height: 56px;
+line-height: 56px;
+margin-top: -4px;
+margin-bottom: 0px;
+}
+#main_favorites h6 {
+margin: 0;
+padding: 0;
+font-size: 16px;
+height: 48px;
+line-height: 48px;
+float: left;
+width: calc(100% - 68px);
+text-align: left;
+}
+#main_favorites button span {
+display: none;
+}
+#main_favorites button:hover span {
+display: block;
+}
+.infavbutton {
+float: left;
+width: 48px;
+height: 48px;
+line-height: 48px;
+}
+
+
+/*  List Navigation */
+
+.main_t {
+float: left;
+width: calc(100% - 20px);
+height: 64px;
+line-height: 64px;
+margin-left: 10px;
+margin-top: 20px;
+border-radius: 10px;
+}
+.main_t h1 {
+float: left;
+line-height: 64px;
+height: 64px;
+margin-left: 20px;
+font-size: 32px;
+}
+.main_tn {
+float: right;
+width: 360px;
+overflow: hidden;
+margin-right: 10px;
+height: 40px;
+line-height: 40px;
+margin-top: 12px;
+}
+.main_tn input[type="radio"] {
+display: none;
+}
+.main_tn input[type="radio"] + label {
+float: left;
+width: 120px;
+height: 40px;
+line-height: 40px;
+font-size: 16px;
+text-align: center;
+overflow: hidden;
+}
+.main_tn input[type="radio"]:checked + label {
+overflow: hidden;
+}
+#chan_nav {
+margin-bottom: 15px;
+}
+
+
+/*  Settings */
+
+#main_settings {
+float: left;
+margin-top: 80px;
+display: none;
+height: 100%;
+padding-bottom: 80px;
+}
+
+#in_settings {
+width: 100%;
+height: 100%;
+padding-bottom: 70px;
+margin-bottom: 70px;
+text-align: left;
+overflow: hidden;
+}
+#setting_visual, #setting_audio, #setting_legal {
+width: calc(100% - 20px);
+margin: 10px;
+}
+#setting_audio, #setting_legal {
+display: none;
+}
+.setting_box {
+float: left;
+width: calc(100% - 20px);
+margin: 0px;
+margin-bottom: 0px;
+padding: 10px;
+margin-bottom: 10px;
+}
+.setting_box h2 {
+float: left;
+width: 100%;
+text-align: left;
+padding-bottom: 10px;
+margin-left: -10px; 
+margin-top: -10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.setting_box h3 {
+float: left;
+width: 100%;
+}
+.setting_box button {
+float: left;
+height: 96px;
+width: 128px;
+line-height: 96px;
+margin-right: 10px;
+}
+.setting_box button:hover {
+float: left;
+height: 96px;
+width: 128px;
+line-height: 96px;
+margin-right: 10px;
+}
+.setboxname {
+float: left;
+text-align: center;
+height: 24px;
+width: 128px;
+line-height: 24px;
+margin-top: 72px;
+font-size: 12px;
+}
+
+/*  Recent */
+
+#main_recent {
+float: left;
+margin-top: 80px;
+display: none;
+height: 100%;
+padding-bottom: 80px;
+}
+#history_box {
+float: left;
+width: 100%; 
+height: 100%;
+}
+#log {
+width: calc(100% - 40px);
+float: left;
+padding: 10px;
+margin: 10px;
+margin-top: 0px;
+}
+#history_channel {
+float: left;
+width: calc(100% - 20px);
+padding: 10px;
+}
+
+
+
+/*  Player */
+
+#main_player {
+display: none;
+visibility: hidden;
+position: fixed;
+top: 0px;
+left: 0pX;
+right: 0px;
+bottom: 0px;
+z-index: 9010;
+}
+#player_display {
+float: left;
+font-size: 192px;
+font-size: 9.5vw;
+line-height: 256px;
+position: fixed;
+top: calc(50% - 128px);
+left: 0px;
+right: 0px;
+width: 100%;
+text-align: center;
+}
+#player_controls {
+float: left;
+position: fixed;
+bottom: 0px;
+right: 0px;
+width: 400px;
+height: 120px;
+left: calc(50% - 200px);
+}
+#player_levdown img, #player_levup img {
+float: left;
+width: 32px;
+height: 32px;
+padding: 16px;
+}
+#player_levdown:hover img, #player_levup:hover img {
+float: left;
+width: 64px;
+height: 64px;
+padding: 0px;
+}
+#player_levdown, #player_levup {
+width: 120px;
+float: left;
+padding-left: 28px;
+height: 120px;
+line-height: 120px;
+}
+#player_levdown:hover, #player_levup:hover {
+width: 120px;
+float: left;
+padding-left: 28px;
+}
+#player_playbutton img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 8px;
+}
+#player_playbutton:hover img {
+width: 64px;
+height: 64px;
+padding: 0px;
+}
+#player_playbutton {
+width: 160px;
+float: left;
+padding-left: 48px;
+height: 160px;
+line-height: 160px;
+margin-top: -20px;
+}
+#player_clock {
+float: left;
+font-size: 64px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+height: 64px;
+line-height: 64px;
+}
+#exit_player {
+float: left;
+position: fixed;
+top: 10px;
+left: 10px;
+width: 64px;
+height: 64px;
+}
+#exit_player img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 0;
+margin: 8px;
+}
+#exit_player:hover img {
+width: 64px;
+height: 64px;
+margin: 0px;
+}
+#favoritebutton_player {
+float: left;
+position: fixed;
+top: 10px;
+right: 10px;
+width: 64px;
+height: 64px;
+}
+#favoritebutton_player img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 0;
+margin: 8px;
+}
+#favoritebutton_player:hover img {
+width: 64px;
+height: 64px;
+margin: 0px;
+}
+}
+
+
+
+@media (max-width : 700px) {
+
+/*  Top with actionType */
+
+#top_nav {
+float: left;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 60px;
+z-index: 140;
+}
+#top_nav_left {
+float: left;
+width: calc(100% - 10px);
+height: 60px;
+line-height: 60px;
+}
+#top_nav_left h3 {
+font-size: 24px;
+padding-left: 10px;
+}
+#dropdown_countries {
+border: none;
+padding: 0;
+margin: 0;
+}
+#top_nav_right {
+float: left;
+width: 10px;
+height: 60px;
+line-height: 60px;
+text-align: right;
+}
+#top_nav_switch {
+float: left;
+width: 460px;
+height: 60px;
+line-height: 60px;
+}
+#top_nav_right input {
+display: none;
+}
+#top_nav_right label {
+width: 140px;
+margin-left: 10px;
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+text-align: center;
+font-size: 24px;
+}
+#inputactiontype {
+float: left;
+width: calc(100% - 110px);
+margin-left: 10px;
+margin-right: 10px;
+padding-left: 10px;
+padding-right: 10px;
+height: 40px;
+line-height: 40px;
+margin-top: 10px;
+font-size: 24px;
+border: none;
+}
+
+
+/*  Bottom Player */
+
+#bottom_player {
+float: left;
+width: 100%;
+height: 60px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+position: fixed;
+z-index: 50;
+}
+
+#controls {
+float: left;
+width: 200px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+#controls button {
+float: left;
+margin-left: 0px;
+font-size: 16px;
+}
+#levdown img, #levup img {
+float: left;
+width: 16px;
+height: 16px;
+padding: 8px;
+}
+#levdown:hover img, #levup:hover img {
+float: left;
+width: 32px;
+height: 32px;
+padding: 0px;
+}
+#levdown, #levup {
+width: 60px;
+float: left;
+padding-left: 14px;
+height: 60px;
+line-height: 60px;
+}
+#levdown:hover, #levup:hover {
+width: 60px;
+float: left;
+padding-left: 14px;
+}
+#playbutton img {
+float: left;
+width: 24px;
+height: 24px;
+padding: 4px;
+}
+#playbutton:hover img {
+width: 32px;
+height: 32px;
+padding: 0px;
+}
+#playbutton {
+width: 80px;
+float: left;
+padding-left: 24px;
+height: 80px;
+line-height: 80px;
+margin-top: -10px;
+}
+#display {
+float: left;
+font-size: 24px;
+height: 60px;
+line-height: 60px;
+width: calc(50% - 120px);
+padding-left: 20px;
+}
+#clock {
+float: left;
+font-size: 24px;
+height: 60px;
+line-height: 60px;
+width: calc(50% - 120px);
+text-align: right;
+padding-right: 20px;
+}
+
+/*  Nav Left */
+
+#channel_nav {
+float: left;
+width: 0px;
+left: 0px;
+bottom: 70px;
+top: 80px;
+position: fixed;
+overflow: hidden;
+}
+#channel_nav label {
+text-align: left;
+float: left;
+overflow: hidden;
+margin-left: 10px;
+}
+#channel_nav input{
+display: none;
+}
+.nav {
+float: left;
+width: 260px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 10px;
+padding-left: 20px;
+font-size: 20px;
+height: 40px;
+line-height: 40px;
+}
+.cntry {
+float: left;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 40px;
+padding-right: 10px;
+width: 240px;
+font-size: 16px;
+height: 32px;
+line-height: 32px;
+}
+	
+/*  Station List */
+
+#main_settings, #main_stations, #main_recent {
+width: calc(100% - 0px);
+margin-left: 0px;
+float: left;
+}
+#channels {
+float: left;
+width: 100%;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+#channels button {
+float: left;
+padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: calc(100% - 20px);
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 5px;
+}
+#channels button:hover {
+padding-top: 15px;
+padding-bottom: 15px;
+margin-top: -5px;
+margin-bottom: 0px;
+}
+#channels h6 {
+margin: 0;
+padding: 0;
+font-size: 16px;
+}
+#channels button span {
+display: none;
+}
+#channels button:hover span {
+display: block;
+}
+#channels_favorites {
+display: block;
+}
+.cha {
+width: 100%;
+display: block;
+
+}
+.cha button {
+width: 100%;
+}
+.ch_norway {
+}
+
+/*  Favorites */
+
+#main_favorites {
+float: left;
+margin-top: 80px;
+display: none;
+margin-bottom: 80px;
+width: 100%;
+}
+#main_favorites div {
+float: left;
+width: 100%;
+}
+#favchannels {
+float: left;
+width: 100%;
+}
+#main_favorites button {
+float: left;
+padding-left: 20px;
+width: calc(100% - 40px);
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 5px;
+height: 48px;
+line-height: 48px;
+}
+#main_favorites button:hover {
+height: 56px;
+line-height: 56px;
+margin-top: -4px;
+margin-bottom: 0px;
+}
+#main_favorites h6 {
+margin: 0;
+padding: 0;
+font-size: 16px;
+height: 48px;
+line-height: 48px;
+float: left;
+width: calc(100% - 68px);
+text-align: left;
+}
+#main_favorites button span {
+display: none;
+}
+#main_favorites button:hover span {
+display: block;
+}
+.infavbutton {
+float: left;
+width: 48px;
+height: 48px;
+line-height: 48px;
+}
+
+
+/*  List Navigation */
+
+.main_t {
+float: left;
+width: 100%;
+height: 48px;
+line-height: 48px;
+}
+.main_t h1 {
+float: left;
+line-height: 48px;
+height: 48px;
+margin-left: 10px;
+font-size: 32px;
+}
+.main_tn {
+float: right;
+width: 360px;
+overflow: hidden;
+margin-right: 10px;
+height: 32px;
+line-height: 32px;
+margin-top: 8px;
+}
+.main_tn input[type="radio"] {
+display: none;
+}
+.main_tn input[type="radio"] + label {
+float: left;
+width: 120px;
+height: 32px;
+line-height: 32px;
+font-size: 16px;
+text-align: center;
+overflow: hidden;
+}
+.main_tn input[type="radio"]:checked + label {
+overflow: hidden;
+}
+#chan_nav {
+margin-bottom: 15px;
+}
+
+
+/*  Settings */
+
+#main_settings {
+float: left;
+margin-top: 80px;
+display: none;
+height: 100%;
+padding-bottom: 80px;
+}
+
+#in_settings {
+width: 100%;
+height: 100%;
+padding-bottom: 70px;
+margin-bottom: 70px;
+text-align: left;
+overflow: hidden;
+}
+#setting_visual, #setting_audio, #setting_legal {
+width: calc(100% - 20px);
+margin: 10px;
+}
+#setting_audio, #setting_legal {
+display: none;
+}
+.setting_box {
+float: left;
+width: calc(100% - 20px);
+margin: 0px;
+margin-bottom: 0px;
+padding: 10px;
+margin-bottom: 10px;
+}
+.setting_box h2 {
+float: left;
+width: 100%;
+text-align: left;
+padding-bottom: 10px;
+margin-left: -10px; 
+margin-top: -10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.setting_box h3 {
+float: left;
+width: 100%;
+}
+.setting_box button {
+float: left;
+height: 96px;
+width: 128px;
+line-height: 96px;
+margin-right: 10px;
+}
+.setting_box button:hover {
+float: left;
+height: 96px;
+width: 128px;
+line-height: 96px;
+margin-right: 10px;
+}
+.setboxname {
+float: left;
+text-align: center;
+height: 24px;
+width: 128px;
+line-height: 24px;
+margin-top: 72px;
+font-size: 12px;
+}
+
+/*  Recent */
+
+#main_recent {
+float: left;
+margin-top: 80px;
+display: none;
+height: 100%;
+padding-bottom: 80px;
+}
+#history_box {
+float: left;
+width: 100%; 
+height: 100%;
+}
+#log {
+width: calc(100% - 40px);
+float: left;
+padding: 10px;
+margin: 10px;
+margin-top: 0px;
+}
+#history_channel {
+float: left;
+width: calc(100% - 20px);
+padding: 10px;
+}
+
+
+
+/*  Player */
+
+#main_player {
+display: none;
+visibility: hidden;
+position: fixed;
+top: 0px;
+left: 0pX;
+right: 0px;
+bottom: 0px;
+z-index: 9010;
+}
+#player_display {
+float: left;
+font-size: 192px;
+font-size: 9.5vw;
+line-height: 256px;
+position: fixed;
+top: calc(50% - 128px);
+left: 0px;
+right: 0px;
+width: 100%;
+text-align: center;
+}
+#player_controls {
+float: left;
+position: fixed;
+bottom: 0px;
+right: 0px;
+width: 400px;
+height: 120px;
+left: calc(50% - 200px);
+}
+#player_levdown img, #player_levup img {
+float: left;
+width: 32px;
+height: 32px;
+padding: 16px;
+}
+#player_levdown:hover img, #player_levup:hover img {
+float: left;
+width: 64px;
+height: 64px;
+padding: 0px;
+}
+#player_levdown, #player_levup {
+width: 120px;
+float: left;
+padding-left: 28px;
+height: 120px;
+line-height: 120px;
+}
+#player_levdown:hover, #player_levup:hover {
+width: 120px;
+float: left;
+padding-left: 28px;
+}
+#player_playbutton img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 8px;
+}
+#player_playbutton:hover img {
+width: 64px;
+height: 64px;
+padding: 0px;
+}
+#player_playbutton {
+width: 160px;
+float: left;
+padding-left: 48px;
+height: 160px;
+line-height: 160px;
+margin-top: -20px;
+}
+#player_clock {
+float: left;
+font-size: 64px;
+position: fixed;
+bottom: 10px;
+right: 10px;
+height: 64px;
+line-height: 64px;
+}
+#exit_player {
+float: left;
+position: fixed;
+top: 10px;
+left: 10px;
+width: 64px;
+height: 64px;
+}
+#exit_player img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 0;
+margin: 8px;
+}
+#exit_player:hover img {
+width: 64px;
+height: 64px;
+margin: 0px;
+}
+#favoritebutton_player {
+float: left;
+position: fixed;
+top: 10px;
+right: 10px;
+width: 64px;
+height: 64px;
+}
+#favoritebutton_player img {
+float: left;
+width: 48px;
+height: 48px;
+padding: 0;
+margin: 8px;
+}
+#favoritebutton_player:hover img {
+width: 64px;
+height: 64px;
+margin: 0px;
+}
+}
+
+
+#justforfun {
+display: none;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+height: 100%;
+width: 100%;
+z-index: 2000;
+background-image: url("images/maxresdefault.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}

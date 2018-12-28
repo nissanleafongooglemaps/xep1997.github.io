@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wave</title>
+	<link rel="apple-touch-icon" href="images/wavelogosmall.png">
+	<link rel="shortcut icon" type="image/x-icon" href="icon/logo48.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="themes/theme01.css">
+	<script src="script/visual.js" type="text/javascript"></script>
+	<script src="script/channels.js" type="text/javascript"></script>
+	<script src="script/player.js" type="text/javascript"></script>	
+	<script src="script/actiontype.js" type="text/javascript"></script>	
+	<script src="script/favorites.js" type="text/javascript"></script>	
+	<script src="script/history.js" type="text/javascript"></script>	
+	<script src="script/themes.js" type="text/javascript"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body id="body" onload="startTime(); startTime2(); loadthemes(); loadfav();" oncontextmenu="return false;">
+	<div id="top_nav">
+		<div id="top_nav_left">
+			<h3>
+				<button id="dropdown_countries" onclick="navDrop();"><img src="icon/logo96.png" height="48px" width="48px" /></button>
+			</h3>
+			<input type="text" placeholder="Wave" id="inputactiontype" onkeydown="if (event.keyCode == 13) actionType()" />
+		</div>
+		<div id="top_nav_right">
+		</div>
+	</div>
+	
+	<div id="channel_nav">
+		<form id="channel_nav_dropdown">
+			<input onclick="hideSidebar(); switchStations(); listAll();" type="radio" name="switch" id="switch_stations" checked/><label class="nav" for="switch_stations"><span>Stations</span></label>
+			<input onclick="hideSidebar(); switchStations(); listDenmark();" type="radio" name="switch" id="list_denmark" /><label class="cntry" for="list_denmark"><span>Denmark</span></label>
+			<input onclick="hideSidebar(); switchStations(); listFrance();" type="radio" name="switch" id="list_france" /><label class="cntry" for="list_france"><span>France</span></label>
+			<input onclick="hideSidebar(); switchStations(); listGermany();" type="radio" name="switch" id="list_germany" /><label class="cntry" for="list_germany"><span>Germany</span></label>
+			<input onclick="hideSidebar(); switchStations(); listNorway();" type="radio" name="switch" id="list_norway" /><label class="cntry" for="list_norway"><span>Norway</span></label>
+			<input onclick="hideSidebar(); switchStations(); listSweden();" type="radio" name="switch" id="list_sweden" /><label class="cntry" for="list_sweden"><span>Sweden</span></label>			
+			<input onclick="hideSidebar(); switchStations(); listUK();" type="radio" name="switch" id="list_uk" /><label class="cntry" for="list_uk"><span>United Kingdom</span></label>		
+			<input onclick="hideSidebar(); switchSettings();" type="radio" name="switch" id="switch_settings" /><label class="nav" for="switch_settings"><span>Settings</span></label>
+		</form>
+	</div>
+	
+	<div id="bottom_player">
+		<audio id="stream" src=""></audio>
+		<div id="display"></div>
+		<div id="controls">
+			<button id="levdown" onclick="volumeDown();"><img src="icon/min64.png"/></button>
+			<button id="playbutton" onclick="playPause();"><img src="icon/pause64.png"/></button>
+			<button id="levup" onclick="volumeUp();"><img src="icon/plus64.png"/></button>
+		</div>
+		<div id="clock" onclick="switchPlayer(); startTime2();">
+			00:00:00
+		</div>
+	</div>
+	
+<div id="main_stations">
+	<div id="channels">
+		
+		<div class="cha">
+			<div id="chan_nav" class="main_t">
+				<h1 id="ch_title">Stations</h1>
+			</div>
+			<button onclick="play0041();" id="list_channel0041" class="ch_norway">
+				<h6>1FM</h6>
+			</button>
+			<button onclick="play0040();" id="list_channel0040" class="ch_norway">
+				<h6>Bandit Rock Non Stop</h6>
+			</button>
+			<button onclick="play0048();" id="list_channel0048" class="ch_denmark">
+				<h6>DR Nyheder</h6>
+			</button>
+			<button onclick="play0030();" id="list_channel0030" class="ch_denmark">
+				<h6>DR P1</h6>
+			</button>
+			<button onclick="play0031();" id="list_channel0031" class="ch_denmark">
+				<h6>DR P2</h6>
+			</button>
+			<button onclick="play0032();" id="list_channel0032" class="ch_denmark">
+				<h6>DR P3</h6>
+			</button>
+			<button onclick="play0044();" id="list_channel0044" class="ch_denmark">
+				<h6>DR P5</h6>
+			</button>
+			<button onclick="play0045();" id="list_channel0045" class="ch_denmark">
+				<h6>DR P6 Beat</h6>
+			</button>
+			<button onclick="play0046();" id="list_channel0046" class="ch_denmark">
+				<h6>DR P7 Mix</h6>
+			</button>
+			<button onclick="play0047();" id="list_channel0047" class="ch_denmark">
+				<h6>DR P8 Jazz</h6>
+			</button>
+			<button onclick="play0020();" id="list_channel0020" class="ch_germany">
+				<h6>ESC Radio</h6>
+			</button>
+			<button onclick="play0018();" id="list_channel0018" class="ch_denmark">
+				<h6>go!FM</h6>
+			</button>
+			<button onclick="play0023();" id="list_channel0023" class="ch_norway">
+				<h6>Kiss</h6>
+			</button>
+			<button onclick="play0025();" id="list_channel0025" class="ch_norway">
+				<h6>Kisstory</h6>
+			</button>
+			<button onclick="play0001();" id="list_channel0001" class="ch_norway">
+				<h6>NRJ Norge</h6>
+				<span onclick="fav0001();">Add</span>
+			</button>
+			<button onclick="play0013();" id="list_channel0013" class="ch_norway">
+				<h6>NRK Jazz</h6>
+			</button>
+			<button onclick="play0011();" id="list_channel0011" class="ch_norway">
+				<h6>NRK Klassisk</h6>
+			</button>
+			<button onclick="play0005();" id="list_channel0005" class="ch_norway">
+				<h6>NRK mP3</h6>
+			</button>
+			<button onclick="play0006();" id="list_channel0006" class="ch_norway">
+				<h6>NRK P1</h6>
+			</button>
+			<button onclick="play0009();" id="list_channel0009" class="ch_norway">
+				<h6>NRK P13</h6>
+			</button>
+			<button onclick="play0007();" id="list_channel0007" class="ch_norway">
+				<h6>NRK P1+</h6>
+			</button>
+			<button onclick="play0008();" id="list_channel0008" class="ch_norway">
+				<h6>NRK P2</h6>
+			</button>
+			<button onclick="play0004();" id="list_channel0004" class="ch_norway">
+				<h6>NRK P3</h6>
+			</button>
+			<button onclick="play0014();" id="list_channel0014" class="ch_norway">
+				<h6>NRK P3 Ur&oslash;rt</h6>
+			</button>
+			<button onclick="play0012();" id="list_channel0012" class="ch_norway">
+				<h6>NRK Sport</h6>
+			</button>
+			<button onclick="play0010();" id="list_channel0010" class="ch_norway">
+				<h6>NRK Super</h6>
+			</button>
+			<button onclick="play0002();" id="list_channel0002" class="ch_norway">
+				<h6>P4 Norge</h6>
+			</button>
+			<button onclick="play0034();" id="list_channel0034" class="ch_norway">
+				<h6>P5 Bergen</h6>
+			</button>
+			<button onclick="play0003();" id="list_channel0003" class="ch_norway">
+				<h6>P5 Hits</h6>
+			</button>
+			<button onclick="play0033();" id="list_channel0033" class="ch_norway">
+				<h6>P5 Nonstop Hits</h6>
+			</button>
+			<button onclick="play0035();" id="list_channel0035" class="ch_norway">
+				<h6>P6 Rock</h6>
+			</button>
+			<button onclick="play0036();" id="list_channel0036" class="ch_norway">
+				<h6>P7 Klem</h6>
+			</button>
+			<button onclick="play0037();" id="list_channel0037" class="ch_norway">
+				<h6>P8 Pop</h6>
+			</button>
+			<button onclick="play0038();" id="list_channel0038" class="ch_norway">
+				<h6>P9 Retro</h6>
+			</button>
+			<button onclick="play0039();" id="list_channel0039" class="ch_norway">
+				<h6>P10 Country</h6>
+			</button>
+			<button onclick="play0019();" id="list_channel0019" class="ch_france">
+				<h6>Puls Radio</h6>
+			</button>
+			<button onclick="play0043();" id="list_channel0043" class="ch_norway">
+				<h6>Radio 1</h6>
+			</button>
+			<button onclick="play0021();" id="list_channel0021" class="ch_norway">
+				<h6>Radio Norge</h6>
+			</button>
+			<button onclick="play0026();" id="list_channel0026" class="ch_norway">
+				<h6>Radio Norsk Pop</h6>
+			</button>
+			<button onclick="play0027();" id="list_channel0027" class="ch_norway">
+				<h6>Radio Rock</h6>
+			</button>
+			<button onclick="play0022();" id="list_channel0022" class="ch_norway">
+				<h6>Radio Soft</h6>
+			</button>
+			<button onclick="play0028();" id="list_channel0028" class="ch_norway">
+				<h6>Radio Topp 40</h6>
+			</button>
+			<button onclick="play0024();" id="list_channel0024" class="ch_norway">
+				<h6>Radio Vinyl</h6>
+			</button>
+			<button onclick="play0042();" id="list_channel0042" class="ch_norway">
+				<h6>Radio Ålesund</h6>
+			</button>
+			<button onclick="play0029();" id="list_channel0029" class="ch_sweden">
+				<h6>RIX FM</h6>
+			</button>
+			<button onclick="play0015();" id="list_channel0015" class="ch_sweden">
+				<h6>Sveriges Radio P1</h6>
+			</button>
+			<button onclick="play0016();" id="list_channel0016" class="ch_sweden">
+				<h6>Sveriges Radio P2</h6>
+			</button>
+			<button onclick="play0017();" id="list_channel0017" class="ch_sweden">
+				<h6>Sveriges Radio P3</h6>
+			</button>
+			
+			
+			
+			
+			<button onclick="play0049();" id="list_channel0049" class="ch_uk">
+				<h6>Brexit FM</h6>
+			</button>
+			<button onclick="play0050();" id="list_channel0050" class="ch_uk">
+				<h6>Queen Elizabeth's EDM playlist</h6>
+			</button>
+			
+			<button onclick="justFun();" id="list_channel001" class="ch_uk">
+				<h6>BTV-1</h6>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div id="main_settings">
+	<div id="settings_nav" class="main_t">
+		<h1>Settings</h1>
+		<form id="settings_nav_in" class="main_tn">
+			<input onclick="settingVisual();" type="radio" name="switch" id="setting_visual_b" checked/><label for="setting_visual_b">Visual</label>
+			<input onclick="settingAudio();" type="radio" name="switch" id="setting_audio_b" /><label for="setting_audio_b">Audio</label>
+			<input onclick="settingLegal();" type="radio" name="switch" id="setting_legal_b" /><label for="setting_legal_b">Legal</label>
+		</form>
+	</div>
+	<div id="in_settings">
+		<div id="setting_visual">
+			<div class="setting_box setting_visual">
+				<h2>Themes</h2>
+				<button onclick="theme0001();"><span class="setboxname">Dark n blue</span></button>
+				<button onclick="theme0002();"><span class="setboxname">Grey n green</span></button>
+				<button onclick="theme0003();"><span class="setboxname">Black n colors</span></button>
+				<button onclick="theme0004();"><span class="setboxname">Bright n purple</span></button>
+				<button onclick="theme0005();"><span class="setboxname">Too much meme</span></button>
+				<button onclick="theme0006();"><span class="setboxname">Grey n magneta</span></button>
+				<button onclick="theme0007();"><span class="setboxname">Grey n yellow</span></button>
+				<button onclick="theme0008();"><span class="setboxname">Old Radio</span></button>
+			</div>
+			<div class="setting_box setting_visual">
+				<h2>Theme Builder</h2>
+				<button onclick="theme0001();"><span class="setboxname">Make a theme</span></button>
+			</div>
+			<div class="setting_box setting_visual">
+				<h2>Language</h2>
+				<button onclick=""><span class="setboxname">System Language</span></button>
+				<button onclick=""><span class="setboxname">English</span></button>
+				<button onclick=""><span class="setboxname">Norwegian</span></button>
+				<button onclick=""><span class="setboxname">Swedish</span></button>
+				<button onclick=""><span class="setboxname">Danish</span></button>
+				<button onclick=""><span class="setboxname">German</span></button>
+				<button onclick=""><span class="setboxname">French</span></button>
+			</div>
+		</div>
+		<div id="setting_audio">
+			<div class="setting_box setting_audio">
+				<h2>Streaming</h2>
+				<h3>Buffer And Wait / Always Live</h3>
+				<button onclick=""><span class="setboxname">Pause stream</span></button>
+				<button onclick=""><span class="setboxname">Always live</span></button>
+				<h3>Choose quality</h3>
+				<button onclick=""><span class="setboxname">Low</span></button>
+				<button onclick=""><span class="setboxname">Normal</span></button>
+				<button onclick=""><span class="setboxname">HiFi</span></button>
+			</div>
+			<div class="setting_box setting_audio">
+				<h2>Audio</h2>
+				<h3>Bass Boost</h3>
+				<h3>Volume Adjust Equality System Controller Pro</h3>
+				<h3>Crazy Audio Enhancement Pro Tool X</h3>
+			</div>
+		</div>
+		<div id="setting_legal">
+			<div class="setting_box setting_legal">
+				<h2>Clear All</h2>
+				<h3>Reset</h3>
+				<button onclick=""><span class="setboxname">Reset</span></button>
+			</div>
+			<div class="setting_box setting_legal">
+				<h2>Feedback</h2>
+				<h3>Report a bug or anything else you want to say to the creator of the amazing radio service Wave</h3>
+			</div>
+			<div class="setting_box setting_legal">
+				<h2>About Wave</h2>
+				<h3>This service is under development and is not yet 100% complete. Bugs may occure.</h3>
+				<h3>Internet radio use insanely much data. Charges may apply if you don't have an unlimited amount of data included in your internet subscription. Contact your internet provider if you have any questions.</h3>
+				<h3>Last updated July 10, 2018</h3>
+				<h3>Copyright me not you 2013</h3>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<div id="main_recent">
+	<h1>Recently Played</h1>
+	<div id="history_box">
+		<h2>If you have a brain you should be able to remember what you have been listening to.</h2>
+		<input type="text" placeholder="Wave Log" id="inp8" onkeydown="if (event.keyCode == 13) actionType()" />
+		<button onclick="adToHistory();">Add</button>
+		<div id="test">
+			Some <span class="foo">sample</span> text.
+		</div>
+		<button onclick="justFun();">
+				Complain here
+		</button>
+	</div>
+</div>
+
+
+
+
+
+<div id="main_player">
+	<div id="player_display"></div>
+	<div id="player_controls">
+		<button id="player_levdown" onclick="volumeDown();"><img src="icon/min128.png"/></button>
+		<button id="player_playbutton" onclick="playPause();"><img src="icon/pause128.png"/></button>
+		<button id="player_levup" onclick="volumeUp();"><img src="icon/plus128.png"/></button>
+	</div>
+	<div id="player_clock">
+		00:00:00
+	</div>
+	<button id="exit_player" onclick="exitPlayer();"><img src="icon/close128.png"/></button>
+</div>
+
+
+
+<div id="justforfun"></div>
+</body>
+</html>

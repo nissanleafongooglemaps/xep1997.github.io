@@ -1,0 +1,74 @@
+html, body {
+background-image: url("file:///Users/egil/Downloads/ae.jpg");
+background-attachment: fixed;
+}
+
+#top_nav {
+background: rgba(255, 66, 98, 1);
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+color: white;
+}
+
+#bottom_player {
+background: rgba(255, 66, 98, 1);
+box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.5);
+color: white;
+}
+
+
+#channel_nav label:hover {
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+#channel_nav input[type="radio"]:checked + label {
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#channels button:hover {
+background: rgba(255, 66, 98, 1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#channels button:hover h6 {
+color: white;
+text-shadow: 0px 0px 10px #000;
+}
+
+#main_favorites button:hover {
+background: rgba(255, 255, 255, 1);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1, h2, h3, h4, h5, h6 {
+color: white;
+text-shadow: none;
+}
+#channel_nav label {
+color: white;
+text-shadow: none;
+
+}
+#channel_nav input[type="radio"]:checked + label {
+border-left-color: rgba(255, 66, 98, 1);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#channels h6 { 
+color: white;
+text-shadow: none;
+}
+
+
+
+
+
+#display {
+color: white;
+}
+#clock {
+color: white;
+}
+
+
+
+
+#main_player {
+background-image: linear-gradient(to bottom, #901 0%, #d45 100%);
+}

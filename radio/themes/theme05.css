@@ -1,0 +1,71 @@
+html, body {
+background-image: url("file:///Users/egil/Downloads/6e665120c202d79a0f6ed09b371d5872--galaxy-cat-space-cat.jpg");
+background-attachment: fixed;
+background-size: 100%;
+}
+* {
+font-family: 'comic sans ms';
+}
+
+#top_nav {
+background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+color: black;
+}
+
+#bottom_player {
+background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.5);
+color: black;
+}
+
+
+#channel_nav label:hover {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+#channel_nav input[type="radio"]:checked + label {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+#channels button:hover {
+background: rgb(255, 0, 100);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#main_favorites button:hover {
+background: rgba(255, 255, 255, 1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+h1, h2, h3, h4, h5, h6 {
+color: rgb(255, 0, 100);
+text-shadow: none;
+}
+#channel_nav label {
+color: rgb(255, 0, 100);
+text-shadow: none;
+
+}
+#channel_nav input[type="radio"]:checked + label {
+border-left-color: rgba(255, 255, 255, 1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#channels h6 { 
+color: white;
+text-shadow: none;
+}
+
+
+#display {
+color: white;
+}
+#clock {
+color: white;
+}
+
+
+
+
+#main_player {
+background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+}
