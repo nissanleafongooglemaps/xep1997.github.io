@@ -9,7 +9,7 @@ background-size: 100%;
 float: left;
 padding: 0;
 margin: 0;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 font-weight: normal;
 transition: all 0.2s ease;
 }
@@ -27,6 +27,10 @@ text-shadow: none;
 background: rgba(30, 35, 40, 1);
 box-shadow: 0px 10px 10px rgba(30, 35, 40, 1);
 }
+#dropdown_countries {
+background: none;
+border: none;
+}
 #inputactiontype {
 background: rgba(0, 0, 0, 0);
 border: none;
@@ -36,11 +40,11 @@ color: white;
     color:    #fff;
    opacity:  0.75;
 }
-:-moz-placeholder { 
+:-moz-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
-::-moz-placeholder { 
+::-moz-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
@@ -48,7 +52,7 @@ color: white;
    color:    #fff;
    opacity:  0.75;
 }
-::-ms-input-placeholder { 
+::-ms-input-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
@@ -127,7 +131,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 font-size: 16px;
 }
 #channels button {
-background: rgba(0, 0, 0, 0); 
+background: rgba(0, 0, 0, 0);
 border: none;
 border-radius: 10px;
 text-shadow: 0px 0px 10px #000;
@@ -139,7 +143,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 #channels h6 {
 color: white;
 font-weight: normal;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 text-shadow: 0px 0px 10px #000;
 }
 #channels button span {
@@ -155,7 +159,7 @@ color: white;
 color: white;
 }
 #main_favorites button {
-background: rgba(0, 0, 0, 0); 
+background: rgba(0, 0, 0, 0);
 border: none;
 text-shadow: 0px 0px 10px #000;
 }
@@ -166,7 +170,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 #main_favorites h6 {
 color: white;
 font-weight: normal;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 text-shadow: 0px 0px 10px #000;
 }
 #main_favorites button span {
@@ -218,8 +222,6 @@ color: black;
 border-radius: 10px;
 }
 #setting_visual, #setting_audio, #setting_legal {
-background: linear-gradient(to bottom, rgba(200,200,200,0.75) 0%, rgba(200,200,200,0.75) 50%, rgba(255,255,255,0.75) 100%);
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 border-radius: 10px;
 }
 .setting_box {
@@ -274,7 +276,7 @@ background-image: linear-gradient(to bottom, #075 0%, #0c9 100%);
 }
 #player_display {
 color: white;
-font-weight: lighter; 
+font-weight: lighter;
 text-shadow: 0px 0px 10px #000;
 }
 #player_controls {
