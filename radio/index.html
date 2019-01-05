@@ -5,15 +5,16 @@
 	<link rel="apple-touch-icon" href="images/wavelogosmall.png">
 	<link rel="shortcut icon" type="image/x-icon" href="icon/logo48.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link id="pagestyle" rel="stylesheet" type="text/css" href="themes/theme01.css">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="themes/theme03.css">
 	<script src="script/visual.js" type="text/javascript"></script>
 	<script src="script/channels.js" type="text/javascript"></script>
-	<script src="script/player.js" type="text/javascript"></script>	
-	<script src="script/actiontype.js" type="text/javascript"></script>	
-	<script src="script/favorites.js" type="text/javascript"></script>	
-	<script src="script/history.js" type="text/javascript"></script>	
-	<script src="script/themes.js" type="text/javascript"></script>	
+	<script src="script/player.js" type="text/javascript"></script>
+	<script src="script/actiontype.js" type="text/javascript"></script>
+	<script src="script/favorites.js" type="text/javascript"></script>
+	<script src="script/history.js" type="text/javascript"></script>
+	<script src="script/themes.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 
 
 </head>
@@ -28,7 +29,7 @@
 		<div id="top_nav_right">
 		</div>
 	</div>
-	
+
 	<div id="channel_nav">
 		<form id="channel_nav_dropdown">
 			<input onclick="hideSidebar(); switchStations(); listAll();" type="radio" name="switch" id="switch_stations" checked/><label class="nav" for="switch_stations"><span>Stations</span></label>
@@ -36,12 +37,12 @@
 			<input onclick="hideSidebar(); switchStations(); listFrance();" type="radio" name="switch" id="list_france" /><label class="cntry" for="list_france"><span>France</span></label>
 			<input onclick="hideSidebar(); switchStations(); listGermany();" type="radio" name="switch" id="list_germany" /><label class="cntry" for="list_germany"><span>Germany</span></label>
 			<input onclick="hideSidebar(); switchStations(); listNorway();" type="radio" name="switch" id="list_norway" /><label class="cntry" for="list_norway"><span>Norway</span></label>
-			<input onclick="hideSidebar(); switchStations(); listSweden();" type="radio" name="switch" id="list_sweden" /><label class="cntry" for="list_sweden"><span>Sweden</span></label>			
-			<input onclick="hideSidebar(); switchStations(); listUK();" type="radio" name="switch" id="list_uk" /><label class="cntry" for="list_uk"><span>United Kingdom</span></label>		
+			<input onclick="hideSidebar(); switchStations(); listSweden();" type="radio" name="switch" id="list_sweden" /><label class="cntry" for="list_sweden"><span>Sweden</span></label>
+			<input onclick="hideSidebar(); switchStations(); listUK();" type="radio" name="switch" id="list_uk" /><label class="cntry" for="list_uk"><span>United Kingdom</span></label>
 			<input onclick="hideSidebar(); switchSettings();" type="radio" name="switch" id="switch_settings" /><label class="nav" for="switch_settings"><span>Settings</span></label>
 		</form>
 	</div>
-	
+
 	<div id="bottom_player">
 		<audio id="stream" src=""></audio>
 		<div id="display"></div>
@@ -54,10 +55,10 @@
 			00:00:00
 		</div>
 	</div>
-	
+
 <div id="main_stations">
 	<div id="channels">
-		
+
 		<div class="cha">
 			<div id="chan_nav" class="main_t">
 				<h1 id="ch_title">Stations</h1>
@@ -207,17 +208,17 @@
 			<button onclick="play0017();" id="list_channel0017" class="ch_sweden">
 				<h6>Sveriges Radio P3</h6>
 			</button>
-			
-			
-			
-			
+
+
+
+
 			<button onclick="play0049();" id="list_channel0049" class="ch_uk">
 				<h6>Brexit FM</h6>
 			</button>
 			<button onclick="play0050();" id="list_channel0050" class="ch_uk">
 				<h6>Queen Elizabeth's EDM playlist</h6>
 			</button>
-			
+
 			<button onclick="justFun();" id="list_channel001" class="ch_uk">
 				<h6>BTV-1</h6>
 			</button>
@@ -238,67 +239,29 @@
 		<div id="setting_visual">
 			<div class="setting_box setting_visual">
 				<h2>Themes</h2>
-				<button onclick="theme0001();"><span class="setboxname">Dark n blue</span></button>
+				<button onclick="theme0003();"><span class="setboxname">Standard</span></button>
 				<button onclick="theme0002();"><span class="setboxname">Grey n green</span></button>
-				<button onclick="theme0003();"><span class="setboxname">Black n colors</span></button>
-				<button onclick="theme0004();"><span class="setboxname">Bright n purple</span></button>
-				<button onclick="theme0005();"><span class="setboxname">Too much meme</span></button>
-				<button onclick="theme0006();"><span class="setboxname">Grey n magneta</span></button>
-				<button onclick="theme0007();"><span class="setboxname">Grey n yellow</span></button>
-				<button onclick="theme0008();"><span class="setboxname">Old Radio</span></button>
+				<button onclick="theme0005();"><span class="setboxname">Too much color</span></button>
 			</div>
 			<div class="setting_box setting_visual">
-				<h2>Theme Builder</h2>
-				<button onclick="theme0001();"><span class="setboxname">Make a theme</span></button>
-			</div>
-			<div class="setting_box setting_visual">
-				<h2>Language</h2>
-				<button onclick=""><span class="setboxname">System Language</span></button>
-				<button onclick=""><span class="setboxname">English</span></button>
-				<button onclick=""><span class="setboxname">Norwegian</span></button>
-				<button onclick=""><span class="setboxname">Swedish</span></button>
-				<button onclick=""><span class="setboxname">Danish</span></button>
-				<button onclick=""><span class="setboxname">German</span></button>
-				<button onclick=""><span class="setboxname">French</span></button>
+				<h3>Warning: "Too much color" might fry your graphics card!</h3>
 			</div>
 		</div>
 		<div id="setting_audio">
 			<div class="setting_box setting_audio">
-				<h2>Streaming</h2>
-				<h3>Buffer And Wait / Always Live</h3>
-				<button onclick=""><span class="setboxname">Pause stream</span></button>
-				<button onclick=""><span class="setboxname">Always live</span></button>
-				<h3>Choose quality</h3>
-				<button onclick=""><span class="setboxname">Low</span></button>
-				<button onclick=""><span class="setboxname">Normal</span></button>
-				<button onclick=""><span class="setboxname">HiFi</span></button>
-			</div>
-			<div class="setting_box setting_audio">
-				<h2>Audio</h2>
-				<h3>Bass Boost</h3>
-				<h3>Volume Adjust Equality System Controller Pro</h3>
-				<h3>Crazy Audio Enhancement Pro Tool X</h3>
+				<h2>No settings here yet</h2>
 			</div>
 		</div>
 		<div id="setting_legal">
 			<div class="setting_box setting_legal">
-				<h2>Clear All</h2>
-				<h3>Reset</h3>
-				<button onclick=""><span class="setboxname">Reset</span></button>
-			</div>
-			<div class="setting_box setting_legal">
-				<h2>Feedback</h2>
-				<h3>Report a bug or anything else you want to say to the creator of the amazing radio service Wave</h3>
-			</div>
-			<div class="setting_box setting_legal">
 				<h2>About Wave</h2>
 				<h3>This service is under development and is not yet 100% complete. Bugs may occure.</h3>
 				<h3>Internet radio use insanely much data. Charges may apply if you don't have an unlimited amount of data included in your internet subscription. Contact your internet provider if you have any questions.</h3>
-				<h3>Last updated July 10, 2018</h3>
+				<h3>Last updated January 5, 2019</h3>
 				<h3>Copyright me not you 2013</h3>
 			</div>
 		</div>
-		
+
 	</div>
 </div>
 
