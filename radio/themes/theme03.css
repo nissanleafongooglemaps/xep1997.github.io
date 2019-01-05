@@ -9,7 +9,7 @@ background-size: 100%;
 float: left;
 padding: 0;
 margin: 0;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 font-weight: normal;
 transition: all 0.2s ease;
 
@@ -40,11 +40,11 @@ color: white;
     color:    #fff;
    opacity:  0.75;
 }
-:-moz-placeholder { 
+:-moz-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
-::-moz-placeholder { 
+::-moz-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
@@ -52,7 +52,7 @@ color: white;
    color:    #fff;
    opacity:  0.75;
 }
-::-ms-input-placeholder { 
+::-ms-input-placeholder {
    color:    #fff;
    opacity:  0.75;
 }
@@ -245,7 +245,7 @@ color: white;
 #channels h6 {
 color: white;
 font-weight: normal;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 text-shadow: 0px 0px 10px #000;
 }
 #channels button span {
@@ -261,7 +261,7 @@ color: white;
 color: white;
 }
 #main_favorites button {
-background: rgba(0, 0, 0, 0); 
+background: rgba(0, 0, 0, 0);
 border: none;
 text-shadow: 0px 0px 10px #000;
 }
@@ -272,7 +272,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 #main_favorites h6 {
 color: white;
 font-weight: normal;
-font-family: 'avenir next';
+font-family: 'Play', sans-serif;
 text-shadow: 0px 0px 10px #000;
 }
 #main_favorites button span {
@@ -398,7 +398,7 @@ background: none;
 border-radius: 120px;
 }
 #player_levdown img, #player_levup img {
--webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
     from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.5)));
 }
 #player_levdown:hover, #player_levup:hover {
@@ -411,7 +411,7 @@ background: none;
 border-radius: 160px;
 }
 #player_playbutton img {
--webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
     from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.5)));
 }
 #player_playbutton:hover {
@@ -433,7 +433,7 @@ color: red;
 }
 #exit_player img {
 border-radius: 64px;
--webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
     from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.5)));
 
 }
@@ -445,6 +445,6 @@ color: red;
 }
 #favoritebutton_player img {
 border-radius: 64px;
--webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
     from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.5)));
 }
