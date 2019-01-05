@@ -1,9 +1,9 @@
 html, body {
-	background: linear-gradient(-45deg, rgb(255, 255, 0), rgb(255, 255, 0), rgb(255, 0, 255), rgb(255, 0, 255));
-		background-size: 400% 400%;
-		-webkit-animation: Gradient 10s ease infinite;
-		-moz-animation: Gradient 10s ease infinite;
-		animation: Gradient 10s ease infinite;
+	background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+		background-size: 800% 800%;
+		-webkit-animation: Gradient 7s ease infinite;
+		-moz-animation: Gradient 7s ease infinite;
+		animation: Gradient 7s ease infinite;
 }
 @-webkit-keyframes Gradient {
 	0% {
@@ -47,8 +47,12 @@ font-family: 'comic sans ms';
 }
 
 #top_nav {
-background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+		background-size: 400% 400%;
+		-webkit-animation: Gradient 4s ease infinite;
+		-moz-animation: Gradient 4s ease infinite;
+		animation: Gradient 4s ease infinite;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 color: black;
 }
 #dropdown_countries {
@@ -62,8 +66,12 @@ color: white;
 }
 
 #bottom_player {
-background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
-box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+		background-size: 400% 400%;
+		-webkit-animation: Gradient 5s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+		animation: Gradient 5s ease infinite;
+		box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.5);
 color: black;
 }
 
@@ -224,17 +232,22 @@ color: white;
 
 
 #main_player {
-	background: linear-gradient(-45deg, rgb(255, 255, 0), rgb(255, 255, 0), rgb(255, 0, 255), rgb(255, 0, 255));
+	background: black;
 		background-size: 400% 400%;
-		-webkit-animation: Gradient 10s ease infinite;
-		-moz-animation: Gradient 10s ease infinite;
-		animation: Gradient 10s ease infinite;}
+		-webkit-animation: Gradient 4s ease infinite;
+		-moz-animation: Gradient 4s ease infinite;
+		animation: Gradient 4s ease infinite;
+	}
 #player_display {
 font-weight: normal;
 text-shadow: inset 0px 0px 10px #000;
-background: -webkit-linear-gradient(rgb(245, 250, 255), rgb(105, 110, 115));
+background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+background-size: 800% 800%;
+-webkit-animation: Gradient 1s ease infinite;
+-moz-animation: Gradient 1s ease infinite;
+animation: Gradient 1s ease infinite;
 }
 #player_controls {
 background: none;
@@ -268,11 +281,16 @@ background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(
 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 #player_clock {
-background: -webkit-linear-gradient(rgb(245, 250, 255), rgb(105, 110, 115));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
 font-weight: light;
 text-shadow: inset 0px 0px 10px #000;
+background: linear-gradient(to right, #ffd400 0%,#ff0800 33%,#007cf9 69%,#00ff08 100%);
+background-size: 800% 800%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-animation: Gradient 1s ease infinite;
+-moz-animation: Gradient 1s ease infinite;
+animation: Gradient 1s ease infinite;
 }
 #exit_player {
 background: none;
