@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131909892-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131909892-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Projects - xep97</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="top">
+      <div id="top-left">
+        <button onclick="hideSidebar();" id="navb" type="button" name="button">
+          <img src="icon/logo.png" alt="" />
+        </button>
+        <a href="https://xep97.com" id="logo">xep97</a>
+      </div>
+      <div id="top-right">
+
+      </div>
+    </div>
+    <div id="sidebar">
+      <a href="https://xep97.com">
+        <img src="icon/home.png" alt="">
+        <span>Home</span>
+      </a>
+      <a href="projects.html">
+        <img src="icon/projects.png" alt="">
+        <span>Projects</span>
+      </a>
+      <a href="coolstuff.html">
+        <img src="icon/coolstuff.png" alt="">
+        <span>Cool Stuff</span>
+      </a>
+      <a href="contact.html">
+        <img src="icon/contact.png" alt="">
+        <span>Contact</span>
+      </a>
+    </div>
+
+    <div id="main">
+      <div id="main-top">
+        <div id="important">
+          <a href="https://xep97.com">No cool stuff yet :(</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style media="screen">
+  * {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-family: 'Play', sans-serif;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  html, body {
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    float: left;
+    color: black;
+  }
+  #top {
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    background: black;
+  }
+  #top-left {
+    float: left;
+  }
+  #navb {
+    float: left;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    background: black;
+  }
+  #navb img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 48px;
+  }
+
+  #logo {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 36px;
+    color: white;
+  }
+  #top-right {
+
+  }
+
+  #sidebar {
+    float: left;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    bottom: 0px;
+    width: 120px;
+    background: black;
+    overflow: hidden;
+  }
+  #sidebar a {
+    float: left;
+    width: 120px;
+    height: 60px;
+    background: black;
+  }
+  #sidebar a img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 48px;
+    padding-top: 10px;
+  }
+  #sidebar a span {
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 21px;
+    height: 21px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  #sidebar a:hover {
+    background: radial-gradient(ellipse at bottom, rgba(100,20,200,1) 0%, rgba(50,10,100,1) 100%);
+  }
+
+
+  #main {
+    float: left;
+    width: calc(100% - 120px);
+    margin-left: 120px;
+    margin-top: 60px;
+    background: none;
+    height: calc(100% - 60px);
+  }
+  #main-top {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  #main-stories {
+    float: left;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  #main-stories p {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+  #main-bottom {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main-bottom p {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  h1 {
+    float: left;
+    width: 100%;
+    color: black;
+    font-size: 48px;
+  }
+
+  .projectlink {
+    float: left;
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-shadow: 2px 2px #000;
+
+  }
+
+
+
+
+
+
+
+  #important {
+    float: left;
+    color: white;
+    font-size: 48px;
+    line-height: 100%;
+    height: 100%;
+    z-index: 3000;
+    width: 100%;
+    -webkit-animation: NA 2s infinite; /* Safari 4+ */
+    -moz-animation:    NA 2s infinite; /* Fx 5+ */
+    animation:         NA 2s infinite; /* IE 10+, Fx 29+ */
+  }
+  #important a {
+    float: left;
+    font-family: 'verdana';
+    font-size: 48px;
+    line-height: 100%;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #000;
+  }
+  @-webkit-keyframes NA {
+  0%, 1% {
+  background-color: rgb(255,0,255);
+  color: black;
+  }
+  49%, 51% {
+  background-color: rgb(120, 0, 120);
+  color: white;
+  }
+  99%, 100% {
+  background-color: rgb(255, 0, 255);
+  color: white;
+  }
+  }
+</style>
+<script type="text/javascript">
+  var sidebar = document.getElementById('sidebar');
+  var main = document.getElementById('main');
+  function hideSidebar() {
+    if (sidebar.style.width === '0px') {
+      sidebar.style.width = '120px';
+  		main.style.width = 'calc(100% - 120px)';
+  		main.style.marginLeft = '120px';
+
+    } else {
+      sidebar.style.width = '0px';
+  		main.style.width = 'calc(100% - 0px)';
+  		main.style.marginLeft = '0px';
+    }
+  }
+</script>
