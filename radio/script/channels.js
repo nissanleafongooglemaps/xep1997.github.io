@@ -81,7 +81,7 @@ function play0007() {
   var website = "http://nrk.no";
   var myAudio = document.getElementById("stream");
   var number = "0007";
-    myAudio.src = "http://lyd.nrk.no/nrk_radio_p1pluss_mp3_h.m3u";
+    myAudio.src = "http://lyd.nrk.no/nrk_radio_p1pluss_mp3_h";
     document.title = name + " - Wave";
 	document.getElementById('display').innerHTML = name;
 	document.getElementById('player_display').innerHTML = name;
@@ -428,11 +428,11 @@ function play0033() {
 }
 
 function play0034() {
-  var name = "P5 Bergen";
-  var website = "http://p4.no";
+  var name = "P24-7 Mix";
+  var website = "http://radioplay.no";
   var myAudio = document.getElementById("stream");
   var number = "0034";
-    myAudio.src = "http://stream.p4.no/p5bergen_mp3_hq";
+    myAudio.src = "http://live-bauerno.sharp-stream.com/p247mix_no_hq";
     document.title = name + " - Wave";
 	document.getElementById('display').innerHTML = name;
 	document.getElementById('player_display').innerHTML = name;
