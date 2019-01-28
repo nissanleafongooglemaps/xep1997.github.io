@@ -1,3 +1,10 @@
+function resetAll() {
+	localStorage.clear();
+	location.reload();
+}
+
+
+
 function exitPlayer() {
 
 	document.getElementById('main_player').style.display = 'none';
@@ -20,7 +27,7 @@ function switchStations() {
 	document.getElementById('main_settings').style.display = 'none';
 	document.getElementById('bottom_player').style.display = 'block';
 	document.getElementById('main_recent').style.display = 'none';
-	
+
 }
 
 function switchFavorites() {
@@ -48,7 +55,7 @@ function switchRecent() {
 	document.getElementById('main_settings').style.display = 'none';
 	document.getElementById('bottom_player').style.display = 'block';
 	document.getElementById('main_recent').style.display = 'block';
-	
+
 }
 
 function listFavorites() {
@@ -146,7 +153,7 @@ function justFun() {
 }
 
 function navDrop() {
-	if ($(window).width() < 700) {
+	if ($(window).width() < 1100) {
 	if (document.getElementById('channel_nav').style.width === '300px') {
 		document.getElementById('channel_nav').style.width = '0px';
 		document.getElementById('main_stations').style.marginLeft = '0px';
@@ -164,7 +171,7 @@ function navDrop() {
 }
 
 function hideSidebar() {
-	if ($(window).width() < 700) {
+	if ($(window).width() < 1100) {
 		document.getElementById('channel_nav').style.width = '0px';
 		document.getElementById('main_stations').style.marginLeft = '0px';
 		document.getElementById('main_settings').style.marginLeft = '0px';
@@ -220,4 +227,39 @@ function startTime2() {
 function checkTime2(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+}
+
+function hideInPlayer() {
+	$("#player_controls").css("bottom", "-120px");
+	var i = null;
+	$("#main_player").mousemove(function() {
+	    clearTimeout(i);
+	    $("#player_controls").css("bottom", "0px");
+	    i = setTimeout('$("#player_controls").css("bottom", "-120px");', 3000);
+	}).mouseleave(function() {
+	    clearTimeout(i);
+	    $("#player_controls").css("bottom", "-120px");
+	});
+
+	$("#exit_player").css("top", "-120px");
+	var i = null;
+	$("#main_player").mousemove(function() {
+			clearTimeout(i);
+			$("#exit_player").css("top", "0px");
+			i = setTimeout('$("#exit_player").css("top", "-120px");', 3000);
+	}).mouseleave(function() {
+			clearTimeout(i);
+			$("#exit_player").css("top", "-120px");
+	});
+
+	$("#favoritebutton_player").css("top", "-120px");
+	var i = null;
+	$("#main_player").mousemove(function() {
+			clearTimeout(i);
+			$("#favoritebutton_player").css("top", "0px");
+			i = setTimeout('$("#favoritebutton_player").css("top", "-120px");', 3000);
+	}).mouseleave(function() {
+			clearTimeout(i);
+			$("#favoritebutton_player").css("top", "-120px");
+	});
 }
