@@ -50,7 +50,7 @@
     <div id="main">
       <div id="main-top">
         <div id="important">
-          <a href="https://youtube.com/pewdiepie">Subscribe to PewDiePie now dudennn</a>
+          <a href="https://youtube.com/pewdiepie">Subscribe to PewDiePie now dude</a>
         </div>
       </div>
       <div id="main-stories">
@@ -93,7 +93,7 @@
 
 
   @media
-  only screen and (min-resolution: 249dpi) {
+  only screen and (max-resolution: 249dpi) {
 
   #top {
     float: left;
@@ -218,8 +218,13 @@
   }
 }
 
-  @media
-  only screen and (max-resolution: 250dpi) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
 
   #top {
     float: left;
