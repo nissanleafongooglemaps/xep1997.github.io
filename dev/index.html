@@ -93,7 +93,146 @@
 
 
   @media
-  only screen {
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 70px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 70px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 70px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 70px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 70px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 70px),
+  only screen and (min-width: 320px) {
+
+    #top {
+      float: left;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 120px;
+      background: black;
+    }
+    #top-left {
+      float: left;
+    }
+    #navb {
+      float: left;
+      width: 240px;
+      height: 120px;
+      line-height: 120px;
+      background: black;
+    }
+    #navb img {
+      float: left;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin-left: 96px;
+    }
+    #logo {
+      float: left;
+      height: 120px;
+      line-height: 120px;
+      padding-left: 20px;
+      font-size: 72px;
+      color: white;
+    }
+    #top-right {
+    }
+    #sidebar {
+      float: left;
+      position: fixed;
+      top: 120px;
+      left: 0px;
+      bottom: 0px;
+      width: 240px;
+      background: black;
+      overflow: hidden;
+    }
+    #sidebar a {
+      float: left;
+      width: 240px;
+      height: 120px;
+      background: black;
+    }
+    #sidebar a img {
+      float: left;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin-left: 96px;
+      padding-top: 20px;
+    }
+    #sidebar a span {
+      float: left;
+      width: 100%;
+      text-align: center;
+      line-height: 42px;
+      height: 42px;
+      font-size: 28px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    #sidebar a:hover {
+      background: radial-gradient(ellipse at bottom, rgba(100,20,200,1) 0%, rgba(50,10,100,1) 100%);
+    }
+
+    #main {
+      float: left;
+      width: calc(100% - 240px);
+      margin-left: 240px;
+      margin-top: 120px;
+      background: none;
+    }
+    #main-top {
+      float: left;
+      width: 100%;
+      height: 600px;
+      margin-bottom: 20px;
+    }
+    #main-stories {
+      float: left;
+      width: calc(100% - 40px);
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    #main-stories p {
+      float: left;
+      width: 100%;
+      text-align: left;
+      font-size: 32px;
+    }
+    #main-bottom {
+      float: left;
+      width: 100%;
+      text-align: center;
+      background: black;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    #main-bottom p {
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+
+    }
+    h1 {
+      float: left;
+      width: 100%;
+      color: red;
+      font-size: 96px;
+    }
+  }
+
+
+  @media
+  only screen and (min-width: 700px),
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1200px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1200px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1200px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1200px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 1200px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 1200px) {
 
   #top {
     float: left;
@@ -217,139 +356,6 @@
     font-size: 48px;
   }
 }
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
-only screen and (                min-resolution: 192dpi) and (min-width: 700px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
-
-  #top {
-    float: left;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 120px;
-    background: black;
-  }
-  #top-left {
-    float: left;
-  }
-  #navb {
-    float: left;
-    width: 240px;
-    height: 120px;
-    line-height: 120px;
-    background: black;
-  }
-  #navb img {
-    float: left;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    margin-left: 96px;
-  }
-  #logo {
-    float: left;
-    height: 120px;
-    line-height: 120px;
-    padding-left: 20px;
-    font-size: 72px;
-    color: white;
-  }
-  #top-right {
-  }
-  #sidebar {
-    float: left;
-    position: fixed;
-    top: 120px;
-    left: 0px;
-    bottom: 0px;
-    width: 240px;
-    background: black;
-    overflow: hidden;
-  }
-  #sidebar a {
-    float: left;
-    width: 240px;
-    height: 120px;
-    background: black;
-  }
-  #sidebar a img {
-    float: left;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    margin-left: 96px;
-    padding-top: 20px;
-  }
-  #sidebar a span {
-    float: left;
-    width: 100%;
-    text-align: center;
-    line-height: 42px;
-    height: 42px;
-    font-size: 28px;
-    padding-bottom: 10px;
-    color: white;
-  }
-  #sidebar a:hover {
-    background: radial-gradient(ellipse at bottom, rgba(100,20,200,1) 0%, rgba(50,10,100,1) 100%);
-  }
-
-  #main {
-    float: left;
-    width: calc(100% - 240px);
-    margin-left: 240px;
-    margin-top: 120px;
-    background: none;
-  }
-  #main-top {
-    float: left;
-    width: 100%;
-    height: 600px;
-    margin-bottom: 20px;
-  }
-  #main-stories {
-    float: left;
-    width: calc(100% - 40px);
-    margin-bottom: 20px;
-    margin-left: 20px;
-  }
-  #main-stories p {
-    float: left;
-    width: 100%;
-    text-align: left;
-    font-size: 32px;
-  }
-  #main-bottom {
-    float: left;
-    width: 100%;
-    text-align: center;
-    background: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #main-bottom p {
-    float: left;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-
-  }
-  h1 {
-    float: left;
-    width: 100%;
-    color: red;
-    font-size: 96px;
-  }
-}
-
-
 
 
   #important {
